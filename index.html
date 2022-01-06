@@ -5,9 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MI PAGINA WEB</title>
+    <style type="text/css">
+        body{
+            color: white;
+            background-color: yellow;
+        }
+        #seccion1{
+            font-size: 60px;
+            text-align: center;
+            background-image: url(https://cdn.pixabay.com/photo/2016/10/22/15/32/water-1761027_960_720.jpg);
+            background-size: contain;
+        }
+        #proyectos{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .proyecto img{
+            height: 50%;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
-   <h1>HOLA MUNDO !!!</h1>
-   <h2>Mi proyecto en git github</h2> 
+    <section id="seccion1">
+        <h1>HOLA MUNDO !!!</h1>
+    </section>
+    <section id="proyectos">
+        <div class="proyecto">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam unde ipsum esse vitae? Voluptatibus harum molestias in animi exercitationem nam perspiciatis. Labore expedita suscipit perspiciatis repellendus vitae reiciendis hic modi?</p>
+        <img src="https://www.xaviro.com/assets/2c07c8f61822f4d3a53b.svg" alt="">
+        </div>
+        <div class="proyecto">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore voluptas sit doloremque necessitatibus deserunt asperiores nesciunt sed et tempore a deleniti, tempora consequuntur voluptate vero eveniet ducimus sapiente nam magnam!</p>
+            <img src="https://www.xaviro.com/assets/2c07c8f61822f4d3a53b.svg" alt="">
+        </div>
+
+    </section>
 </body>
+<script>
+
+    console.log("Hola Mundo!!");
+    let proyectos = document.querySelector('#proyectos');
+    console.log(proyectos);
+    proyectos.style.background = 'red';
+</script>
 </html>
