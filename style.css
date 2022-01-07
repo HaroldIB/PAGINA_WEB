@@ -85,7 +85,7 @@ ul{
     right: 30px;
     /* Para que el booton esté siempre encima */
     z-index: 2;
-    /* display: none; */
+    display: none;
     font-size: 1.5rem;
 }
 
@@ -264,6 +264,9 @@ hr{
 }
 
 @media(max-width: 700px){
+    .menu-btn{
+        display: block;
+    }
     .nav-main ul.nav-menu{
         display: block;
         position: absolute;
@@ -302,3 +305,22 @@ hr{
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media(max-width: 500px){
+    .news-cards{
+        grid-template-columns: 1fr;
+    }
+    .news-cards img{
+        height: 270px;
+    }
+
+    .cards-banner-one .content,
+    .cards-banner-two .content{
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .footer-links .footer-container{
+        grid-template-columns: 1frx;
+    }
+}    
