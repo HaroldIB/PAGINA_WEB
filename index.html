@@ -2,51 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MI PAGINA WEB</title>
-    <style type="text/css">
-        body{
-            color: white;
-            background-color: yellow;
-        }
-        #seccion1{
-            font-size: 60px;
-            text-align: center;
-            background-image: url(https://cdn.pixabay.com/photo/2016/10/22/15/32/water-1761027_960_720.jpg);
-            background-size: contain;
-        }
-        #proyectos{
-            display: grid;
-            grid-template-columns: auto auto;
-        }
-        .proyecto img{
-            height: 50%;
-            width: 50%;
-        }
-    </style>
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- FONT OSWALD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- CUstom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="seccion1">
-        <h1>HOLA MUNDO !!!</h1>
-    </section>
-    <section id="proyectos">
-        <div class="proyecto">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam unde ipsum esse vitae? Voluptatibus harum molestias in animi exercitationem nam perspiciatis. Labore expedita suscipit perspiciatis repellendus vitae reiciendis hic modi?</p>
-        <img src="https://www.xaviro.com/assets/2c07c8f61822f4d3a53b.svg" alt="">
-        </div>
-        <div class="proyecto">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore voluptas sit doloremque necessitatibus deserunt asperiores nesciunt sed et tempore a deleniti, tempora consequuntur voluptate vero eveniet ducimus sapiente nam magnam!</p>
-            <img src="https://www.xaviro.com/assets/2c07c8f61822f4d3a53b.svg" alt="">
-        </div>
+    
+    <!-- Par que este centreado usamos un div -->
+    <div class="container">
+        <!--Creamos la etiqueta nav para toda la navegación  -->
+        <nav class="nav-main">
+            <img src="img/brand.png" alt="Logo" class="nav-brand">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Pestaña 1</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 2</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 3</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 4</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 5</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 6</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search">
 
-    </section>
-</body>
-<script>
-
-    console.log("Hola Mundo!!");
-    let proyectos = document.querySelector('#proyectos');
-    console.log(proyectos);
-    proyectos.style.background = 'red';
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+  
+  
 </script>
 </html>
