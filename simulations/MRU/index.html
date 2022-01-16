@@ -11,15 +11,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- CUstom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_main.css">
 </head>
 <body>
+
     <div class="container">
+        <nav class="nav-main">
+            <img src="img/brand.png" alt="Logo" class="nav-brand">
+            <ul class="nav-menu show">
+                <li>
+                    <a href="../../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="index.html">LAB 1 MRU</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 3</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 4</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 5</a>
+                </li>
+                <li>
+                    <a href="#">Pestaña 6</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search">
+
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Añadimos una línea -->
+        <hr>
         <h1>MOVIMIENTO RECTILÍNEO UNIFORME</h1>
-        <canvas id="canvas" width="800" height="300">
+        
+        <div class="controlSimulation">
+            <p id="textVelocidad">Velocidad:</p>
+            <input id="textBox" placeholder="Velocidad de la partícula" />
+            <br>
+            <button id="startSimulation">INICIAR</button>
+        </div>
+        
+        <canvas id="canvas" width="1080" height="300">
             Tu navegador no soporta CANVAS!
         </canvas>
+        
         <form>
-            Velocidad: <input id="textBox" placeholder="Velocidad de la partícula" />
+            <button id="draw">DETENER</button>
+            <br>
+            
             <br> 
         </form>
     </div>
